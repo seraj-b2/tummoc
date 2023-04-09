@@ -6,7 +6,6 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
 // import {
@@ -14,9 +13,6 @@ import { BarCodeScanner } from 'expo-barcode-scanner';
 //   QrCodeScanner,
 //   requestAuthorizationAsync,
 // } from "react-native-ios-qr-code-scanner";
-
-import { Button } from 'react-native-elements';
-
 // import { Icon } from 'react-native-elements';
 import {SafeAreaView} from 'react-native-safe-area-context'
 import { useEffect, useState } from 'react';
@@ -73,7 +69,7 @@ export default function App() {
 
   const storeData = async (value) => {
     try {
-      await AsyncStorage.setItem('@storage_Key', value)
+      // await AsyncStorage.setItem('@storage_Key', value)
       // console.log(res)
       setBusno(value)
       // setGDate('');
@@ -85,11 +81,11 @@ export default function App() {
   
 const getData = async () => {
   try {
-    const value = await AsyncStorage.getItem('@storage_Key')
-    if(value !== null) {
-      console.log(value);
-    }
-    return setBusno(value);
+    // const value = await AsyncStorage.getItem('@storage_Key')
+    // if(value !== null) {
+    //   console.log(value);
+    // }
+    // return setBusno(value);
   } catch(e) {
     // error reading value
   }
@@ -271,8 +267,8 @@ useEffect(()=>{
     <Text style={styles.head2}>{passValidTill}</Text>
     </View>
     <View>
-    <Text style={styles.head1,{textDecorationLine:'underline',alignItems:"flex-end",display:"flex",left:10}} >Pass fare</Text>
-    <Text style={styles.head2,{fontSize:19,fontWeight:500}} >&#8377; 3650.0</Text>
+    <Text style={[styles.head1,styles.fare]} >Pass fare</Text>
+    <Text style={[styles.head2,styles.price]} >&#8377; 3650.0</Text>
     </View>
     </View>
     <TouchableOpacity style={styles.mail} ><Text style={styles.mailtext}> Generate mail receipt </Text></TouchableOpacity>
@@ -375,6 +371,7 @@ const styles = StyleSheet.create({
     fontSize:13.5,
     fontWeight:500
   },
+  fare:{textDecorationLine:'underline',alignItems:"flex-end",display:"flex",left:10},
   pass:{
     color:"#757575"
   },
@@ -409,5 +406,5 @@ tinyLogo:{
   header:{
     backgroundColor:'#0f2d38',
     width:'100%'
-  }
+  },price:{fontSize:19,fontWeight:500}
 });

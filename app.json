@@ -7,7 +7,7 @@
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/home.jpg",
+      "image": "./assets/home.png",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
@@ -38,7 +38,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#ffffff"
       },
       "permissions": [
@@ -50,7 +50,7 @@
       "package": "com.xenxo.tummoc"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
     },
     "extra": {
       "eas": {
