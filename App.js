@@ -186,24 +186,24 @@ useEffect(()=>{
     <Image style={{width:70,height:70}} source={require('./assets/R.jpeg')} />
     <View style={{display:"flex",
   flexDirection:"column",gap:4}}>
-      <Text style={{fontSize:22,paddingLeft:20,fontWeight:600}}>Vayu Vajra Gold Pass</Text>
-      <View style={{display:'flex',flexDirection:'row',gap:40,paddingLeft:40}}>
+      <Text style={{fontSize:20,paddingLeft:20,fontWeight:400}}>Vayu Vajra Gold Pass</Text>
+      <View style={{display:'flex',flexDirection:'row',gap:40,paddingLeft:20}}>
       {/* <Text>Monthly</Text> */}
-      <Text style={{backgroundColor:"#dcebc4",width:35,textAlign:'center',borderRadius:8,color:"green",fontWeight:700,fontSize:17}}>AC</Text>
+      <Text style={{backgroundColor:"#dcebc4",width:35,textAlign:'center',borderRadius:8,color:"#576453",fontWeight:500,fontSize:14}}>AC</Text>
       </View>
       <View style={{display:'flex',flexDirection:'row',paddingLeft:20}} >
       <Text style={styles.pass}>Pass ID: </Text>
       <Text style={styles.pass1}>TPASS9307165</Text>
       </View>
       <Text style={{color:"#034560",textDecorationLine:'underline',right:50}}>Click here to view validation instructions</Text>
-      <View style={{display:"flex",flexDirection:"row",right:60}}>
-      <Image style={{width:30,height:39}} source={require('./assets/Screenshot.png')} />
+      <View style={{display:"flex",flexDirection:"row",right:60,margin:5}}>
+      <Image style={{width:35,height:45,bottom:2}} source={require('./assets/Screenshot.png')} />
       {/* <Button title='Scan conductor OR for validation' color="Black" style={{}} /> */}
       <TouchableOpacity
          style={styles.button}
          onPress={()=>setShowqr(pre=>!pre)}
        >
-         <Text style={{ fontWeight:600,fontSize:14.5,
+         <Text style={{ fontWeight:500,fontSize:14.5,
     color:"#0f2c39",}}> Scan conductor OR for validation </Text>
  </TouchableOpacity>
       </View>
@@ -214,10 +214,14 @@ useEffect(()=>{
     </View>
   
    </View>
+   <ScrollView 
+   showsVerticalScrollIndicator={false}
+   
+   >
    <Text style={styles.book} >Booking Details</Text>
-    <ScrollView
-    showsVerticalScrollIndicator={false}
-    style={{width:"90%",height:'65%',borderRadius:8,backgroundColor:'#fff',shadowColor: 'black',left:18,
+    <View
+    
+    style={{width:"90%",borderRadius:8,backgroundColor:'#fff',shadowColor: 'black',left:18,
   shadowOpacity: 0.5,
   shadowRadius: 5,
   shadowOffset: {width: 0, height: 2},
@@ -301,9 +305,11 @@ useEffect(()=>{
       marginBottom:10
     }}
 />
-  <Image style={{height:332,width:330}} source={require('./assets/code.gif')}/>
-  <Image style={{height:32,width:30,position:"relative",bottom:180,left:150}} source={require('./assets/R.jpeg')}/>
-
+<View style={{height:550}}>
+  <Image style={{height:300,width:330,right:25}} source={require('./assets/code.gif')}/>
+  <Image style={{height:35,width:34,position:"relative",bottom:180,left:125}} source={require('./assets/R.jpeg')}/>
+  </View>
+  </View>
   </ScrollView>
   <Model modalopen={showmodal} setShowModal={setShowModal} passValidTill={passValidTill}/>
    </View>
@@ -355,9 +361,11 @@ const styles = StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    backgroundColor: '#BCE3CF',
+    backgroundColor: 'rgba(209, 230, 219,0.4)',
     padding: 10,
     borderRadius:4,
+    height:39,
+   borderRadius:5
    
   },
   button1: {
@@ -406,5 +414,5 @@ tinyLogo:{
   header:{
     backgroundColor:'#0f2d38',
     width:'100%'
-  },price:{fontSize:19,fontWeight:500}
+  },price:{fontSize:19,fontWeight:400}
 });
