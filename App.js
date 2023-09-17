@@ -235,7 +235,7 @@ useEffect(()=>{
     <View style={{display:'flex',gap:10,margin:5}}>
     <View>
     <Text style={styles.head1}>Passenger name</Text>
-    <Text style={styles.head2}>Riyam Jain</Text>
+    <Text style={styles.head2}>Seraj Khan</Text>
     </View>
     <View>
     <Text style={styles.head1}>Identification type</Text>
@@ -243,7 +243,7 @@ useEffect(()=>{
     </View>
     <View>
     <Text style={styles.head1}>Identification number (Last 4 digits)</Text>
-    <Text style={styles.head2}>2105</Text>
+    <Text style={styles.head2}>8807</Text>
     </View>
     </View>
     <Image style={{width:100,height:100}} source={require('./assets/Image.png')} />
