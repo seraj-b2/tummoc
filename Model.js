@@ -48,7 +48,7 @@ const Model = ({modalopen,setShowModal,passValidTill}) => {
               <View style={styles.flexing}>
 
               <Text style={styles.head12}>Pass fare</Text>
-              <Text style={styles.head12}>&#8377; 3650</Text>
+              <Text style={styles.head12}>&#8377; 4000</Text>
               </View>
 
             </View>

@@ -272,7 +272,7 @@ useEffect(()=>{
     </View>
     <View>
     <Text style={[styles.head1,styles.fare]} >Pass fare</Text>
-    <Text style={[styles.head2,styles.price]} >&#8377; 3650.0</Text>
+    <Text style={[styles.head2,styles.price]} >&#8377; 4000.0</Text>
     </View>
     </View>
     <TouchableOpacity style={styles.mail} ><Text style={styles.mailtext}> Generate mail receipt </Text></TouchableOpacity>

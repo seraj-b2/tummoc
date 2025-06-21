@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "tummoc",
-    "slug": "tummoc",
+    "slug": "tummoc-2",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -54,8 +54,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "e623dcc6-75ce-4589-b28e-d73969599f8c"
+        "projectId": "eab11374-bd79-4ff6-bee5-81c3e0878907"
       }
-    }
+    },
+    "owner": "serajkhan"
   }
 }
